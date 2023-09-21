@@ -56,7 +56,17 @@
     border-bottom: 1px solid #1da3d9;
     line-height: 28px;
     font-weight: 100;
+font-size: 19px;
+}.wq-component .wq-accordion-title:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin: -10px 0 0;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    transform: rotate(90deg);
 }
+
     </style>
     <style type='text/css'>
         .ae_data .elementor-editor-element-setting {
@@ -133,12 +143,12 @@
                 </div>
             </div> -->
             <div class="wq-nav">
-                <div class="wrapper"> <a class="logo" href="index.html" style="display: flex;"><noscript><img width="200" height="32" alt="WarehouseQuote" src="https://www.warehousequote.com/wp-content/themes/warehousequote/images/logo2x.png" /></noscript><img class="lazyload" width="200" height="32" alt="WarehouseQuote" src='wp-content/themes/warehousequote/images/logo2x.png' data-src="wp-content/themes/warehousequote/images/logo2x.png" style="position: relative;
+                <div class="wrapper"> <a class="logo" href="index.html" style="display: flex;"><noscript><img width="200" height="32" alt="WarehouseQuote" src="https://www.warehousequote.com/wp-content/themes/warehousequote/images/logo2x.png" /></noscript><img class="lazyload" width="200" height="32" alt="WarehouseQuote" src='wp-content/themes/warehousequote/images/logo2x1.png' data-src="wp-content/themes/warehousequote/images/logo2x1.png" style="position: relative;
     top: -5px;
     width: 22%;" /> <h1 style="
     font-size: 25px;
     color: white;
-    top: 11px;
+    top: 19px;
     position: relative;
     left: 10px;
 ">Roots LogistiCare</h1> </a>
@@ -217,11 +227,17 @@
                     <div class="wrapper">
                         <div class="wq-hero-content">
                             <!-- <h1 class="wq-title wq-headline-seo">WAREHOUSEQUOTE FOR outsourced warehousing</h1> -->
-                            <h2 class="wq-intro-headline mt-0">Solutions <b>for your <br>Dynamic supply chain</b></h2>
-                            <div class="the-content">
+                            <h2 class="wq-intro-headline mt-0"style="
+                            position: relative;
+                            bottom: 40px;
+                        ">Solutions <b>for your <br>Dynamic supply chain</b></h2>
+                            <div class="the-content"style="
+                            position: relative;
+                            bottom: 40px;
+                        ">
                                 <p>Providing solutions that meet customer needs from one end of the supply chain to the other.</p>
                             </div>
-                            <div class="wq-intro-btns wq-component" style="display: flex; align-items: center;">
+                            <div class="wq-intro-btns wq-component" style="display: flex; align-items: center;justify-content: center;">
                                  <a class="wq-btn" href="#" target="_self">Know More</a> <strong class="wq-accordion-title" style="    margin: 30px 30px 0 0;"></strong>
                       </div>
                             <!-- <div class="wq-intro-btns"> <a class="wq-btn" href="https://www.warehousequote.com/talk-to-an-expert/" target="_self">Talk to an expert</a></div> -->
@@ -242,7 +258,9 @@
                 </div> -->
             </div>
             <div class="wq-components">
-                <div class="wq-component wq-section wq-cmp-wq_wysiwyg wq-light">
+                <div class="wq-component wq-section wq-cmp-wq_wysiwyg wq-light"style="
+                padding: 20px;
+            ">
                     <div class="wrapper">
                         <div class="the-content">
                             <!-- <h2 style="text-align: center;">What is<br /> <span style="color: #1da3d9;">outsourced warehousing and fulfillment?</span></h2> -->
@@ -263,7 +281,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="wq-component wq-cmp-wq_solution">
+                <div class="wq-component wq-cmp-wq_solution" id="contract">
                     <div class="wq-solution-wrap wq-section">
                         <div class="wrapper">
                             <div class="wq-solution-content wq-reveal" style="padding-top: 0px !important;">
@@ -397,7 +415,7 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="wq-component wq-cmp-wq_capabilities">
+                <div class="wq-component wq-cmp-wq_capabilities" id="ecomm">
                     <div class="wq-capabilities-wrap wq-section">
                         <div class="wrapper">
                             <div class="wq-capabilities-content wq-reveal">
@@ -427,7 +445,7 @@
                                 width="1600" height="1600" /></div>
                     </div>
                 </div>
-                <div class="wq-component wq-cmp-wq_solution">
+                <div class="wq-component wq-cmp-wq_solution" id="plant">
                     <div class="wq-solution-wrap wq-section">
                         <div class="wrapper">
                             <div class="wq-solution-content wq-reveal">
@@ -465,7 +483,7 @@
                         <div class="wq-solution-img-wrap"> <img class="wq-solution-img" style="object-position: right center;     top: 123px;" alt="Warehouse workers walking into a warehouse" src="wp-content/uploads/2023/06/IN PLANT.jpeg" width="1000" height="1000" /></div>
                     </div>
                 </div>
-                <div class="wq-component wq-cmp-wq_capabilities">
+                <div class="wq-component wq-cmp-wq_capabilities" id="value">
                     <div class="wq-capabilities-wrap wq-section">
                         <div class="wrapper">
                             <div class="wq-capabilities-content wq-reveal" style="    top: 137px;
@@ -478,23 +496,23 @@
                                     <li class="wq-list-item">We offer a wide range of solutions under VAS :
                                         <ul>
                                             <li style="margin-top: 20px;">
-                                                PICK PACK & LABEL
+                                               <b>PICK PACK & LABEL</b> 
                                                 <p style="margin-top: 10px;">As an extension of your brand, we want to make sure we highlight you. We can do custom packaging and labelling. Whether that means your logo on the box, certain labels, or special packaging, we can do it.</p>
                                             </li>
                                             <li style="margin-top: 20px;">
-                                                KITTING & BUNDLING
+                                                <b>  KITTING & BUNDLING</b>
                                                
                                             </li>
                                             <li style="margin-top: 20px;">
-                                                UNIT CARTONISATION
+                                                <b>  UNIT CARTONISATION</b>
                                                
                                             </li>
                                             <li style="margin-top: 20px;">
-                                                PACKAGING
+                                                <b> PACKAGING</b>
                                                
                                             </li>
                                             <li style="margin-top: 20px;">
-                                                & RETURNS MANAGEMENT
+                                                <b>  & RETURNS MANAGEMENT</b>
 
                                                
                                             </li>
@@ -519,7 +537,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="wq-capabilities-img-wrap"> <noscript><img class="wq-capabilities-img" alt="Warehouse workers walking into a warehouse" src="wp-content/uploads/2023/06/VALUE ADDED.jpeg" width="1600" height="1600" /></noscript><img class="lazyload wq-capabilities-img" style="    object-position: bottom;"
+                        <div class="wq-capabilities-img-wrap"> <noscript><img class="wq-capabilities-img" alt="Warehouse workers walking into a warehouse" src="wp-content/uploads/2023/06/VALUE ADDED.jpeg" width="1600" height="1600" /></noscript><img class="lazyload wq-capabilities-img" style="    object-position: bottom right;"
                                 alt="Warehouse workers walking into a warehouse" src='wp-content/uploads/2023/06/VALUE ADDED.jpeg' data-src="wp-content/uploads/2023/06/VALUE ADDED.jpeg"
                                 width="1600" height="1600" /></div>
                     </div>
